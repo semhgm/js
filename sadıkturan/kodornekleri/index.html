@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script type="text/javascript">
+        // This is a simple JavaScript code snippet
+        console.log("Hello, World!");
+
+        // Function to add two numbers
+        function add(a, b) {
+            return a + b;
+        }
+        function subtract(a,b){
+            return a-b;
+        }
+
+        // Example usage of the subtract function
+        const subtractResult = subtract(10, 5);
+        console.log('the result of subtracting 5 from 10 is :' + subtractResult);
+        // Example usage of the add function
+        const result = add(5, 10);
+        console.log("The result of adding 5 and 10 is: " + result);
+
+
+        //----------------------------------------------------------------------------
+
+        // Variables
+        var a = 50000;
+        var b = 50000;
+        var c = 60000;
+        var d = 70000;
+        var kdv = 1.18;
+
+        var toplam = (a + b + c + d) * kdv;
+        console.log("Toplam (KDV dahil): " + toplam);
+        
+        var productName = "Laptop";
+        var productPrice = 1500;
+        var productQuantity = 3;
+
+        console.log("Ürün Adı: " + productName);
+        console.log("Ürün Fiyatı: " + productPrice);
+        console.log("Ürün Miktarı: " + productQuantity);
+
+        var isAvailable = true;
+        if (isAvailable) {
+            console.log("Toplam Fiyat: " + productPrice * productQuantity);
+        }
+        else {
+            console.log("Ürün stokta yok.");
+        }
+
+        //----------------------------------------------------------------------------
+        var student1 = {
+            name: "Ali",
+            surname: "Yılmaz",
+            age: 25,
+            courses: ["math", "physics", "chemistry"],
+            notes: {
+                math: 85,
+                physics: 90,
+                chemistry: 95
+            }
+        };
+        var average = (student1.notes.math + student1.notes.physics + student1.notes.chemistry) / 3;
+        console.log("Average Note: " + parseInt(average));
+        
+        if (average >= 90) {
+            console.log("Grade: A");
+        } else if (average >= 80) {
+            console.log("Grade: B");
+        } else if (average >= 70) {
+            console.log("Grade: C");
+        } else if (average >= 60) {
+            console.log("Grade: D");
+        } else {
+            console.log("Grade: F");
+        }
+        
+
+        
+        //----------------------------------------------------------------------------
+        // strings
+
+        var name = "John";
+        var surname = "Doe";
+        var city = "New York";
+        var age = 30;
+        
+        var message = "My name is " + name + " " + surname + ", I am " + age + " years old and I live in " + city + ".";
+        console.log(message);
+
+        // String methods
+        console.log("Uppercase: " + message.toUpperCase()); 
+        console.log("Lowercase: " + message.toLowerCase());
+        console.log("Length: " + message.length);
+        console.log("Substring: " + message.substring(0, 10));
+        console.log("Index of 'John': " + message.indexOf("John"));
+        console.log("Last index of 'o': " + message.lastIndexOf("o"));
+        console.log("Replace 'John' with 'Jane': " + message.replace("John", "Jane"));
+        console.log("Split by space: " + message.split(" "));       
+        console.log("Trimmed: " + message.trim());
+        console.log("Starts with 'My': " + message.startsWith("My"));
+        console.log("Ends with 'York.': " + message.endsWith("York."));
+        console.log("Includes 'name': " + message.includes("name"));
+        console.log("Repeat 3 times: " + message.repeat(3));        
+        console.log("Char at index 0: " + message.charAt(0));
+        console.log("Code at index 0: " + message.charCodeAt(0));
+        console.log("Concatenated: " + name.concat(" ", surname, " from ", " ", city));
+        console.log("Locale Compare: " + name.localeCompare("Jane"));
+        console.log("Search for 'John': " + message.search("John"));
+        console.log("Match 'John': " + message.match(/John/));
+        console.log("Pad Start: " + message.padStart(50, "*"));
+        console.log("Pad End: " + message.padEnd(50, "*"));
+        console.log("Slice: " + message.slice(0, 10));
+        console.log("To String: " + message.toString());
+        console.log("Value Of: " + message.valueOf());
+        console.log("Fixed: " + (123456.789).toFixed(2));
+        console.log("Precision: " + (123456.789).toPrecision(5));
+        console.log("To Exponential: " + (123456.789).toExponential(2));
+
+        //----------------------------------------------------------------------------
+        //arrays
+        var fruits = ["apple", "banana", "cherry"];
+        console.log("Fruits: " + fruits);
+
+        let numbers = [1, 2, 3, 4, 5];
+        console.log("Numbers: " + numbers);
+
+
+    </script>
+</body>
+</html>
