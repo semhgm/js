@@ -73,11 +73,11 @@ console.log(typeof fonksiyon); // "function"
 // ============ Primitive vs Reference farkı ============
 
 // Primitive: değer kopyalanır
-let a = 5;
-let b = a;
-b = 10;
-console.log(a); // 5 (değişmedi)
-console.log(b); // 10
+let a1 = 5;
+let b1 = a1;
+b1 = 10;
+console.log(a1); // 5 (değişmedi)
+console.log(b1); // 10
 
 // Reference: referans paylaşılır
 let obj1 = { sayi: 5 };
@@ -92,3 +92,14 @@ const SABIT_DEGER = "değişmeyecek";  // varsayılan: const
 let sayac = 0;                        // değişecekse: let
 sayac++;
 // var KULLANMA - eski ve sorunlu
+
+
+//alert("JavaScript öğrenmeye devam et!");
+// let kullaniciAdi = prompt("Adınızı girin:");
+// alert("Merhaba, " + kullaniciAdi + "! JavaScript öğrenmeye devam et!");
+
+
+informations = prompt("Adınızı, soyadınızı, yaşınızı ve şehrinizi sırayla girin (virgülle ayırarak):");
+
+let [name, surname, age, city] = informations.split(",");
+alert(`Merhaba, ${name} ${surname}! Yaşınız ${age} ve ${city} şehrinde yaşıyorsunuz. JavaScript öğrenmeye devam edin!`);
